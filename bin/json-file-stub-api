@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+var cli = require('../lib/cli');
+process.title = 'json-file-stub-api';
+
+if (process.argv.length === 2) {
+  console.log('===JSON file stub API tool===');
+  console.log('Usage: Provide a {statics} and {routes} folder.');
+  console.log('  {statics}: built static assets for distribution');
+  console.log('  {routes}:  a directory hierarchy of index.json files to emulate API endpoints');
+  console.log('ex. json-file-stub-api dist/ routes/');
+} else {
+  cli(process.argv[2], process.argv[3]);
+}

@@ -1,14 +1,18 @@
 {
   "name": "json-file-stub-api",
   "version": "0.0.0",
-  "description": "Simple project for serving out static files and a fake API from JSON files",
-  "main": "index.js",
+  "description": "Simple CLI tool for serving out static files and a fake API from JSON files",
+  "bin": "bin/json-file-stub-api",
+  "main": "lib/cli/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha test/"
   },
   "author": "Justin Woo",
   "license": "ISC",
-  "dependencies": {
+  "peerDependencies": {
     "express": "^4.4.4"
+  },
+  "devDependencies": {
+    "mocha": "^1.20.1"
   }
 }
