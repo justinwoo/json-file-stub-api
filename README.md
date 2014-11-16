@@ -2,6 +2,12 @@
 
 Silly CLI tool for serving out static files and a static "API".
 
+
+# Contributing
+
+If you have any feature requests or ideas on how this can be improved, please open an issue right away.
+
+
 # Usage
 
 Install the tool using `npm install --save-dev` or whichever is your preferred method of installation.
